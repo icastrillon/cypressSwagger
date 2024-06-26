@@ -18,7 +18,11 @@ Precondición:
 
     git clone https://github.com/icastrillon/cypressSwagger.git
 
+   Nota: Abril el proyecto desde la carpeta cypressSwagger 
+   
+   ![image](https://github.com/icastrillon/cypressSwagger/assets/33946503/4eae56de-fcff-4a2b-bbf0-edb90c70d4c1)
 
+   
    2. Instala todas las dependencias del proyecto (incluyendo Cypress) con yarn:
 
  	yarn
@@ -59,6 +63,8 @@ EJERCICIO 2 - AUTOMATIZACION API
 4. Para ejecutar el reporte ir al terminar e ingresar
 
     yarn test:report
+   ![image](https://github.com/icastrillon/cypressSwagger/assets/33946503/b265bf34-a79b-4f0c-9ab7-973cb70d91b7)
+
 
    ![image](https://github.com/icastrillon/cypressSwagger/assets/33946503/7eeeabdf-c27f-497a-91ca-2b62f383e972)
 
