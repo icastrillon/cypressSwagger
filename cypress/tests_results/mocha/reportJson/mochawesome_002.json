@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-26T08:16:31.989Z",
+    "end": "2024-06-26T08:16:33.285Z",
+    "duration": 1296,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "774d0591-46da-46c1-afd2-26b5dccad32c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\spec.cy.js",
+      "file": "cypress\\e2e\\spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "51cf9bb8-15a3-48a3-bfa4-eea56162a546",
+          "title": "EJERCICIO 2 | Gestión de una tienda de venta",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar la consulta de una ordenData de compra ",
+              "fullTitle": "EJERCICIO 2 | Gestión de una tienda de venta Validar la consulta de una ordenData de compra ",
+              "timedOut": null,
+              "duration": 571,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.api({\n  method: 'GET',\n  url: `/9`\n}).then(response => {\n  expect(response.status).to.equal(statusApi.successfulOperation);\n});",
+              "err": {},
+              "uuid": "df157024-d276-4054-9501-278dd6a010a5",
+              "parentUUID": "51cf9bb8-15a3-48a3-bfa4-eea56162a546",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar creación de una orden de compra ",
+              "fullTitle": "EJERCICIO 2 | Gestión de una tienda de venta Validar creación de una orden de compra ",
+              "timedOut": null,
+              "duration": 138,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.api({\n  method: 'POST',\n  url: `/`,\n  body: {\n    id: ordenData.id,\n    petId: ordenData.petId,\n    quantity: ordenData.quantity,\n    shipDate: ordenData.shipDate,\n    status: ordenData.status,\n    complete: ordenData.complete\n  }\n}).then(response => {\n  expect(response.status).to.equal(statusApi.successfulOperation);\n  expect(response.body.id).to.equal(ordenData.id);\n  expect(response.body.petId).to.equal(ordenData.petId);\n  expect(response.body.shipDate).to.equal(ordenData.shipDate);\n  expect(response.body.status).to.equal(ordenData.status);\n  expect(response.body.complete).to.equal(ordenData.complete);\n});",
+              "err": {},
+              "uuid": "0f38fe07-fb1c-4dd6-8f7a-26bb593f9e7f",
+              "parentUUID": "51cf9bb8-15a3-48a3-bfa4-eea56162a546",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar la consulta de una orden de compra creada ",
+              "fullTitle": "EJERCICIO 2 | Gestión de una tienda de venta Validar la consulta de una orden de compra creada ",
+              "timedOut": null,
+              "duration": 134,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.api({\n  method: 'GET',\n  url: `https://petstore.swagger.io/v2/store/order/${ordenData.id}`\n}).then(response => {\n  expect(response.status).to.equal(200);\n  expect(response.body.id).to.equal(ordenData.id);\n  expect(response.body.petId).to.equal(ordenData.petId);\n  expect(response.body.shipDate).to.equal(ordenData.shipDate);\n  expect(response.body.status).to.equal(ordenData.status);\n  expect(response.body.complete).to.equal(ordenData.complete);\n});",
+              "err": {},
+              "uuid": "1533fbea-6302-4bfb-a1ff-654426b14575",
+              "parentUUID": "51cf9bb8-15a3-48a3-bfa4-eea56162a546",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar inventario de ventas ",
+              "fullTitle": "EJERCICIO 2 | Gestión de una tienda de venta Verificar inventario de ventas ",
+              "timedOut": null,
+              "duration": 133,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.api({\n  method: 'GET',\n  url: `https://petstore.swagger.io/v2/store/inventory`\n}).then(response => {\n  expect(response.status).to.equal(statusApi.successfulOperation);\n});",
+              "err": {},
+              "uuid": "83acbfa1-7038-4bc4-9dee-686549d65652",
+              "parentUUID": "51cf9bb8-15a3-48a3-bfa4-eea56162a546",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar eliminar mascota por ID",
+              "fullTitle": "EJERCICIO 2 | Gestión de una tienda de venta Validar eliminar mascota por ID",
+              "timedOut": null,
+              "duration": 250,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.api({\n  method: 'DELETE',\n  url: `/${ordenData.id}`\n}).then(response => {\n  expect(response.status).to.equal(statusApi.successfulOperation);\n});\n//Validar que el registro eliminado ya no existe\ncy.api({\n  method: 'DELETE',\n  url: `/${ordenData.id}`,\n  failOnStatusCode: false\n}).then(response => {\n  expect(response.status).to.equal(statusApi.orderNotfound);\n});",
+              "err": {},
+              "uuid": "843388fc-67ae-425b-b06b-5207fce2eba8",
+              "parentUUID": "51cf9bb8-15a3-48a3-bfa4-eea56162a546",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "df157024-d276-4054-9501-278dd6a010a5",
+            "0f38fe07-fb1c-4dd6-8f7a-26bb593f9e7f",
+            "1533fbea-6302-4bfb-a1ff-654426b14575",
+            "83acbfa1-7038-4bc4-9dee-686549d65652",
+            "843388fc-67ae-425b-b06b-5207fce2eba8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1226,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/tests_results/mocha/reportJson",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

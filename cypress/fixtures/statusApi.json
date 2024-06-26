@@ -1,0 +1,5 @@
+{
+	"successfulOperation": 200,
+	"invalidOrder": 400,
+	"orderNotfound": 404
+}

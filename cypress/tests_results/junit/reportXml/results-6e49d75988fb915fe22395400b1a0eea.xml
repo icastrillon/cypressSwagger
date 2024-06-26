@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.655" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-06-26T08:14:41" tests="0" file="cypress\e2e\spec.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="EJERCICIO 2 | Gestión de una tienda de venta" timestamp="2024-06-26T08:14:41" tests="5" time="1.625" failures="0">
+    <testcase name="Validar la consulta de una ordenData de compra " time="0.614" classname="EJERCICIO 2 | Gestión de una tienda de venta Validar la consulta de una ordenData de compra ">
+    </testcase>
+    <testcase name="Validar creación de una orden de compra " time="0.199" classname="EJERCICIO 2 | Gestión de una tienda de venta Validar creación de una orden de compra ">
+    </testcase>
+    <testcase name="Validar la consulta de una orden de compra creada " time="0.189" classname="EJERCICIO 2 | Gestión de una tienda de venta Validar la consulta de una orden de compra creada ">
+    </testcase>
+    <testcase name="Verificar inventario de ventas " time="0.186" classname="EJERCICIO 2 | Gestión de una tienda de venta Verificar inventario de ventas ">
+    </testcase>
+    <testcase name="Validar eliminar mascota por ID" time="0.389" classname="EJERCICIO 2 | Gestión de una tienda de venta Validar eliminar mascota por ID">
+    </testcase>
+  </testsuite>
+</testsuites>
