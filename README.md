@@ -16,7 +16,7 @@ Precondición:
 
     1. Clona el Proyecto:
 
-    git clone
+    git clone https://github.com/icastrillon/cypressSwagger.git
 
 
    2. Instala todas las dependencias del proyecto (incluyendo Cypress) con yarn:
@@ -31,55 +31,41 @@ Precondición:
    También puede usar npx cypress open (ya que en Package.json tenemos la variable "test" como el "cypress open") para abrir Cypress.
    
 4.  Configurar Cypress
-Seleccionar E2E Testing
+ 
+ 1. Seleccionar E2E Testing
 
-   ![image](https://github.com/icastrillon/retoAutomatizacion/assets/33946503/1a5fdba5-9aec-4dbb-807c-95c2e6f14b71)
+![image](https://github.com/icastrillon/cypressSwagger/assets/33946503/fb6bd48c-859a-4aab-96ea-80c0ceca70e6)
 
-Seleccionar browser 
+  
 
-![image](https://github.com/icastrillon/retoAutomatizacion/assets/33946503/1a05a92c-62a2-4251-b881-1c28d3c3540b)
+ 2. Seleccionar browser 
 
-Iniciar testing 
-
-Seleccionar el ejercicion
-![image](https://github.com/icastrillon/retoAutomatizacion/assets/33946503/aecd2e68-7924-4c7b-965a-4715753bf6c9)
+![image](https://github.com/icastrillon/cypressSwagger/assets/33946503/ced40f72-5a60-4ee5-9ee4-bc9fb77f84ca)
 
 
-EJERCICIO 1 
-1. Creación de paginas 
-	homePage y register 
-	para segmentar las variables y los metodos que se van a utiliza en cada pagina 
-2. Creación fixtures con la data a utilizar en cada pagina 
-3. Importar las paginas en el proyecto 
-4. crear el paso de prueba 
-5 ejecutar el caso de prueba con nmp run prod
+3. Iniciar testing 
+
+3.1 Seleccionar  spec
+
+![image](https://github.com/icastrillon/cypressSwagger/assets/33946503/5d0b7fff-4ce1-4ce1-8a66-1a9a01e2f610)
 
 
-![image](https://github.com/icastrillon/retoAutomatizacion/assets/33946503/10427066-ec79-4d59-aa13-b71a2b3b5b83)
-
-Seleccionar SPECS para ir al otro ejercicio
-
-![image](https://github.com/icastrillon/retoAutomatizacion/assets/33946503/7ce97cbf-ffb4-4146-b6ed-bd9120ef98cb)
-
-9. Para ejecutar el reporte ir al terminar e ingresar
-    yarn run html-report 
-
-![image](https://github.com/icastrillon/retoAutomatizacion/assets/33946503/8eca37a2-57a3-4d8a-88d3-1cc66e0523fe)
-
-![image](https://github.com/icastrillon/retoAutomatizacion/assets/33946503/4ecb5fc7-cab4-4e76-907b-dd298e74e512)
+EJERCICIO 2 - AUTOMATIZACION API 
 
 
-EJERCICIO 2 
-1. Creación de casos de prueba por cada endpoint
-2. Validación de los endpoints
-3. Ejecutar el caso de prueba con nmp run prod
+![image](https://github.com/icastrillon/cypressSwagger/assets/33946503/9e5abdd7-6cfd-45e3-a37c-35c52f2f786b)
 
-![image](https://github.com/icastrillon/retoAutomatizacion/assets/33946503/1a0c97a0-2d39-41d6-bd9a-3e9f40a9981f)
-
-
-![image](https://github.com/icastrillon/retoAutomatizacion/assets/33946503/0f938ccf-a902-4477-812b-5b10cf2ff4d6)
 
 4. Para ejecutar el reporte ir al terminar e ingresar
-   yarn run html-api
 
-   ![image](https://github.com/icastrillon/retoAutomatizacion/assets/33946503/9032ed81-da28-4b6e-b712-398034bf1227)
+    yarn test:report
+
+   ![image](https://github.com/icastrillon/cypressSwagger/assets/33946503/7eeeabdf-c27f-497a-91ca-2b62f383e972)
+
+En la carpeta test_results están reportes en json , xml y html 
+
+![image](https://github.com/icastrillon/cypressSwagger/assets/33946503/68f36443-d03a-4789-834d-e051653bfab5)
+
+   
+
+ 
