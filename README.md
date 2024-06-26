@@ -4,7 +4,8 @@ ESTRUCTURA DE PROYECTO
 
 RESUMEN : 
 
-![image](https://github.com/icastrillon/retoAutomatizacion/assets/33946503/a5731c56-8205-4854-9196-fdbdbc61f36f)
+![image](https://github.com/icastrillon/cypressSwagger/assets/33946503/28b075ef-bb38-4049-a702-69fa757bc689)
+
 
 CÓMO EMPEZAR:
 
@@ -15,7 +16,7 @@ Precondición:
 
     1. Clona el Proyecto:
 
-    git clone https://github.com/upex-galaxy/cypress-template-gx.git
+    git clone
 
 
    2. Instala todas las dependencias del proyecto (incluyendo Cypress) con yarn:
